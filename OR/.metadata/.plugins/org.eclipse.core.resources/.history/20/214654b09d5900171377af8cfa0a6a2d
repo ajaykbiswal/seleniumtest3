@@ -1,0 +1,96 @@
+package PageFactory;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.testng.Assert;
+
+public class PageObjectList {
+	
+	WebDriver driver;
+	
+	public PageObjectList(WebDriver odriver)
+	{
+		this.driver=odriver;
+		
+		
+	}
+
+	@FindBy(id="user_login") 
+	WebElement userName;
+	
+	@FindBy(how=How.ID,using="user_pass") 
+	WebElement userpass;
+	
+	@FindBy(how=How.NAME,using="wp-submit") 
+	WebElement login_button;
+	
+
+	@FindBy(how=How.LINK_TEXT,using="Posts") 
+	WebElement Pst_button;
+	
+	@FindBy(how=How.LINK_TEXT,using="Add New") 
+	WebElement Add_button;
+	
+	
+	@FindBy(how=How.NAME,using="post_title") 
+	WebElement Pst_title;
+	
+	
+	@FindBy(how=How.NAME,using="publish") 
+	WebElement publish_button;
+	
+	@FindBy(how=How.XPATH,using="//*[@id='message']/p")
+	WebElement Verify_title;
+	
+	public void login_wordpress(String uid,String pass)
+	
+	{
+		userName.sendKeys(uid);
+		
+		userpass.sendKeys(pass);
+		
+		login_button.submit();
+	
+	}
+	
+	public void post_button()
+	{
+		
+		Pst_button.click();
+	}
+	
+	public void add_buttons()
+	{
+		
+		Add_button.click();
+	}
+	
+	public void post_title(String TitleText)
+	{
+		
+		Pst_title.sendKeys(TitleText);
+		
+		publish_button.click();
+	}
+	
+	public void Verify_Msg_Title()
+	{
+//		WebElement oele=driver.findElement(By.xpath("//*[@id='message']/p"));
+//		List<WebElement> oVerify_title=driver.findElements(By.xpath("//*[@id='message']/p"));
+		
+		System.out.println(Verify_title.getText());
+			
+	}
+	
+	
+	
+	
+}
+
+
+

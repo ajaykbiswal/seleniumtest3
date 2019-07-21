@@ -1,0 +1,41 @@
+package ReadexcelData;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ReadingExcel1 {
+
+	public static void main(String[] args) throws Exception 
+	{
+		
+		File src=new File("D:\\ExcelData\\TestData.xlsx");
+		FileInputStream ofile=new FileInputStream(src);
+		XSSFWorkbook wb=new XSSFWorkbook(ofile);
+		XSSFSheet osheet=wb.getSheetAt(0);
+		int rows=osheet.getLastRowNum();
+		for(int i=0;i<rows;i++)
+		{
+		 osheet.getRow(i).getCell(0).getStringCellValue();
+		}
+		
+		wb.close();		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

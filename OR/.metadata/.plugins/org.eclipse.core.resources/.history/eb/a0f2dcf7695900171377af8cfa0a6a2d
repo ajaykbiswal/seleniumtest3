@@ -1,0 +1,39 @@
+package PageFactory;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+public class PageObjectStr {
+	
+	WebDriver driver;
+	public PageObjectStr(WebDriver odriver)
+	
+	{
+		
+		this.driver=odriver;
+	}
+
+	
+	@FindBy(id="user_login")
+	WebElement userName;
+	
+	@FindBy(how=How.ID,using="user_pass") 
+	WebElement password;
+	
+	@FindBy(how=How.NAME,using="wp-submit") 
+	WebElement loginbutton;
+	
+	
+	public void login_wordpress(String uid,String pass)
+	{
+		userName.sendKeys(uid);
+		password.sendKeys(pass);
+		loginbutton.submit();
+		
+	}
+	
+	
+	
+}

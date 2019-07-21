@@ -1,0 +1,12 @@
+package ExcelReadingConfig;
+
+public class ReadingData {
+
+	public static void main(String[] args) {
+		ReadingExcelConfig excel=new ReadingExcelConfig("D:\\ExcelData\\TestData.xlsx");
+		String data=excel.getData(1, 0, 1);
+		System.out.println("Row value Is: "+data);
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package ExcelLibs;
+
+public class ReadingExcelData {
+
+	public static void main(String[] args) {
+		ExcelDataConfigs obj=new ExcelDataConfigs("D:\\ExcelData\\TestData.xlsx");
+		System.out.println(obj.Getdata(1, 0, 0));	
+
+	}
+
+}

@@ -1,0 +1,45 @@
+package lib;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelDataConfig {
+	XSSFWorkbook wb;
+	XSSFSheet sheet1;
+	
+	
+	
+	public ExcelDataConfig(String Excelfilepath)
+	{
+			
+		try 
+		{
+			File src=new File(Excelfilepath);
+			FileInputStream files=new FileInputStream(src);
+			wb=new XSSFWorkbook(files);
+			
+		 } 
+		catch (Exception e) 
+		{
+			System.out.println(e.getMessage());
+			
+						
+	    }
+		
+	}
+	
+	public String getData(int sheetNo,int rowno,int colno){
+		sheet1=wb.getSheetAt(sheetNo);
+		String data=sheet1.getRow(rowno).getCell(colno).getStringCellValue();
+		return data;
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,15 @@
+package jenkinsTest;
+
+import org.testng.annotations.Test;
+
+public class Demo1 {
+	
+	
+	@Test
+	public void jenkinstestOne(){
+		
+		
+		System.out.println("Welcome to jenkins World");
+	}
+
+}

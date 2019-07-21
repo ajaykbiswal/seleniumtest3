@@ -1,0 +1,10 @@
+package ExcelTest;
+
+public class ExcelConfig {
+
+	public static void main(String[] args) throws Exception {
+		ExcelTestScript excel=new ExcelTestScript("D:\\ExcelData\\TestData.xlsx");
+
+	}
+
+}

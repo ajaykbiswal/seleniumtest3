@@ -1,0 +1,12 @@
+package PageFactory;
+
+public class GetPostTitle {
+
+	public static void main(String[] args) {
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,59 @@
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+
+public class YahooOne {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "D://Chrome//chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("http://Yahoo.com");
+		driver.manage().window().maximize();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//a[@id='uh-signin']")).click();
+		//By locator=By.xpath("//a[@id='login-signup']");
+		if(driver.findElement(By.xpath("//a[@id='login-signup']")).isDisplayed()){
+			driver.findElement(By.xpath("//a[@id='login-signup']")).click();
+		}
+		else {	
+			driver.findElement(By.xpath("//a[@id='createacc']")).click();
+			
+		}
+//		if(driver.findElements(locator).size()>0){
+//		  if(driver.findElement(locator).isDisplayed()){
+//			  driver.findElement(locator).click();	  
+//		  }
+//		}
+//		else
+//			if(driver.findElements(By.xpath("//a[@id='createacc']")).size()>0){
+//				if(driver.findElement(By.xpath("//a[@id='login-signup']")).isDisplayed()){
+//					driver.findElement(By.xpath("//a[@id='login-signup']")).click();
+//				}	
+//			}
+//		
+		driver.findElement(By.name("firstName")).sendKeys("Ajay");
+		driver.findElement(By.name("lastName")).sendKeys("Adjay");
+		Select oselect=new Select(driver.findElement(By.name("mm")));
+		List<WebElement> element=oselect.getOptions();
+		 for (int i=1;i<element.size();i++){
+			 String smonth=element.get(i).getText();
+			  if(smonth.equals("July")){
+				  oselect.selectByIndex(i);
+				  break;
+				  
+			  }
+			 
+		 }
+
+		 driver.findElement(By.name("dd")).sendKeys("25");
+		 driver.findElement(By.name("yyyy")).sendKeys("1890");
+		 driver.findElement(By.name("freeformGender")).sendKeys("Male");
+		 
+	}
+
+}

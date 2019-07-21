@@ -1,0 +1,12 @@
+<suite name="Ecommerce suite">
+<test name="sanity tests">
+ <classes>
+ <class name="SeleniumTest.Test1"/>
+ <class name="SeleniumTest.Test2"/>
+ </classes>
+</test>
+
+</suite>
+
+
+

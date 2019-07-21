@@ -1,0 +1,31 @@
+package SeleniumTest;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class Test1 {
+    @BeforeClass
+	public void login()  {
+		System.out.println("Login Scussesfully");
+	}
+    @AfterClass
+	public void logout()  {
+		System.out.println("Logout Scussesfully");
+	}
+	@Test
+	public void search()  {
+		System.out.println("search Scussesfully");
+	}
+	@Test
+	public void AdvanceSearch()  {
+		System.out.println("Advance Search Scussesfully");
+	}
+	@Test
+	public void Buyproducts()  {
+		System.out.println("Buy Products Scussesfully");
+	}
+	
+	
+}
+

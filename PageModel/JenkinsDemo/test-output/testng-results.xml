@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="8706" started-at="2018-04-16T13:29:03Z" finished-at="2018-04-16T13:29:12Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="8706" started-at="2018-04-16T13:29:03Z" finished-at="2018-04-16T13:29:12Z">
+      <class name="jenkinsTest.Demo1">
+        <test-method status="PASS" signature="jenkinstestOne()[pri:0, instance:jenkinsTest.Demo1@77f03bb1]" name="jenkinstestOne" duration-ms="8696" started-at="2018-04-16T18:59:03Z" finished-at="2018-04-16T18:59:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jenkinstestOne -->
+      </class> <!-- jenkinsTest.Demo1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

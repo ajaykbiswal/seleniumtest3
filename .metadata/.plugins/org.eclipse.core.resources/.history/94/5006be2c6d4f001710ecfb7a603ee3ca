@@ -1,0 +1,6 @@
+package ExcelTest;
+
+public class ExcelConfig {
+	ExcelTestScript excel=new ExcelTestScript("D:\\ExcelData\\TestData.xlsx");
+
+}

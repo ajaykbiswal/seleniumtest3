@@ -1,0 +1,19 @@
+package PageFactory;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+public class VerifyLogin {
+	
+	 
+	
+	@Test
+	public void  Verfiywordpress(){
+		
+		WebDriver driver=BrowserFactory.startBrowser("chrome","http://demosite.center/wordpress/wp-login.php");
+		
+		PageObjectStr s=PageFactory.initElements(driver,PageObjectStr.this);
+	}
+
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Ecommerce suite" duration-ms="40" started-at="2017-06-09T12:23:53Z" finished-at="2017-06-09T12:23:53Z">
+    <groups>
+    </groups>
+    <test name="sanity tests" duration-ms="40" started-at="2017-06-09T12:23:53Z" finished-at="2017-06-09T12:23:53Z">
+      <class name="SeleniumTest.Test2">
+        <test-method status="PASS" signature="fundtransfer()[pri:0, instance:SeleniumTest.Test2@591f989e]" name="fundtransfer" duration-ms="10" started-at="2017-06-09T17:53:53Z" finished-at="2017-06-09T17:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fundtransfer -->
+        <test-method status="PASS" signature="accuntsummary()[pri:0, instance:SeleniumTest.Test2@591f989e]" name="accuntsummary" duration-ms="0" started-at="2017-06-09T17:53:53Z" finished-at="2017-06-09T17:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accuntsummary -->
+        <test-method status="PASS" signature="Billpayment()[pri:0, instance:SeleniumTest.Test2@591f989e]" name="Billpayment" duration-ms="0" started-at="2017-06-09T17:53:53Z" finished-at="2017-06-09T17:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Billpayment -->
+      </class> <!-- SeleniumTest.Test2 -->
+      <class name="SeleniumTest.Test1">
+        <test-method status="PASS" signature="login()[pri:0, instance:SeleniumTest.Test1@f5f2bb7]" name="login" is-config="true" duration-ms="10" started-at="2017-06-09T17:53:53Z" finished-at="2017-06-09T17:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:SeleniumTest.Test1@f5f2bb7]" name="logout" is-config="true" duration-ms="0" started-at="2017-06-09T17:53:53Z" finished-at="2017-06-09T17:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="search()[pri:0, instance:SeleniumTest.Test1@f5f2bb7]" name="search" duration-ms="0" started-at="2017-06-09T17:53:53Z" finished-at="2017-06-09T17:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="login()[pri:0, instance:SeleniumTest.Test1@f5f2bb7]" name="login" is-config="true" duration-ms="0" started-at="2017-06-09T17:53:53Z" finished-at="2017-06-09T17:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="login()[pri:0, instance:SeleniumTest.Test1@f5f2bb7]" name="login" is-config="true" duration-ms="0" started-at="2017-06-09T17:53:53Z" finished-at="2017-06-09T17:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:SeleniumTest.Test1@f5f2bb7]" name="logout" is-config="true" duration-ms="0" started-at="2017-06-09T17:53:53Z" finished-at="2017-06-09T17:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="Buyproducts()[pri:0, instance:SeleniumTest.Test1@f5f2bb7]" name="Buyproducts" duration-ms="0" started-at="2017-06-09T17:53:53Z" finished-at="2017-06-09T17:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Buyproducts -->
+        <test-method status="PASS" signature="AdvanceSearch()[pri:0, instance:SeleniumTest.Test1@f5f2bb7]" name="AdvanceSearch" duration-ms="0" started-at="2017-06-09T17:53:53Z" finished-at="2017-06-09T17:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdvanceSearch -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:SeleniumTest.Test1@f5f2bb7]" name="logout" is-config="true" duration-ms="0" started-at="2017-06-09T17:53:53Z" finished-at="2017-06-09T17:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- SeleniumTest.Test1 -->
+    </test> <!-- sanity tests -->
+  </suite> <!-- Ecommerce suite -->
+</testng-results>
